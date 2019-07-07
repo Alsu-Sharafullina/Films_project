@@ -48,6 +48,8 @@ $(function () {
         var movie_title = $icon.closest('.bookmarks__item').find(".bookmarks__name").html();
         delete bookmarks[movie_title];
         showBookmarks();
+
+        localStorage.setItem('bookmarks__list', JSON.stringify(bookmarks));
     });
 
 
@@ -146,6 +148,8 @@ function setActive($btn) {
 //показ/скрытие контента
 function showContent($btn) {
     if ($btn.hasClass('films')) {
+        $('.search').removeClass('closed');
+        $('.tags').removeClass('closed');
         $(".btn").removeClass("closed");
         $(".films__content").removeClass('closed');
         $('.bookmarks__content').addClass('closed');
