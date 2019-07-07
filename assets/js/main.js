@@ -1,4 +1,4 @@
-var films = []; //массив, в котором хранятся все фильмы
+var films = films_json; //массив, в котором хранятся все фильмы
 
 var bookmarks = (localStorage.getItem('bookmarks__list')) ?
     JSON.parse(localStorage.getItem('bookmarks__list')) :
@@ -7,37 +7,13 @@ var current_tags = {}; //текущие выбранные теги
 var current_movies = {}; //текущие выбранные фильмы
 var current_films_amount = 15; //количество фильмов изначально на странице
 
-var tags = []; //массив, в котором хранятся все теги
+var tags = tags_json; //массив, в котором хранятся все теги
 
 
 $(function () {
 
-    // получение данных json (фильмы)
-    $.ajax({
-        url : "./jsons/films.json",
-        method : "get",
-        success: function (data) {
-            films = data;
-            showFilms();
-
-        },
-        error : function () {
-            console.log("error");
-        }
-    });
-
-    //получение данных json (теги)
-    $.ajax({
-        url : "./jsons/tags.json",
-        method : "get",
-        success: function (data) {
-            tags = data;
-            showTags(tags);
-        },
-        error : function () {
-            console.log("error");
-        }
-    });
+    showFilms();
+    showTags(tags);
 
 
 //обработка клика по разделам фильмы/закладки
@@ -60,7 +36,7 @@ $(function () {
             delete bookmarks[movie_title];
             $icon.find('use').attr('href', '#star');
         }
-        
+
         localStorage.setItem('bookmarks__list', JSON.stringify(bookmarks));
         
     });
