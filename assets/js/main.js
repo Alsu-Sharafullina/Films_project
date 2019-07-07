@@ -207,7 +207,7 @@ function createFilmItem() {
         '                            <div class="film__name"></div>\n' +
         '                            <div class="film__icon">\n' +
         '                                <svg class="star__icon">\n' +
-        '                                    <use xlink:href="#star"></use>\n' +
+        '                                    <use xlink:href="#star" class="star"></use>\n' +
         '                                </svg>\n' +
         '                            </div>\n' +
         '                        </div>');
