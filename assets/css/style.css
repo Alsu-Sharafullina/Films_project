@@ -236,11 +236,11 @@ button {
     color: #fff;
     border: 1px solid #534747;
     border-radius: 2px;
-    padding: 15px;
+    padding: 12px;
     outline: 0;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
 }

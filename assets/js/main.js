@@ -1,6 +1,8 @@
 var films = []; //массив, в котором хранятся все фильмы
 
-var bookmarks = {}; //объект, в котором хранятся все фильмы в закладках
+var bookmarks = (localStorage.getItem('bookmarks__list')) ?
+    JSON.parse(localStorage.getItem('bookmarks__list')) :
+    {}; //объект, в котором хранятся все фильмы в закладках
 var current_tags = {}; //текущие выбранные теги
 var current_movies = {}; //текущие выбранные фильмы
 var current_films_amount = 15; //количество фильмов изначально на странице
@@ -16,7 +18,6 @@ $(function () {
         method : "get",
         success: function (data) {
             films = data;
-            //
             showFilms();
 
         },
@@ -31,7 +32,6 @@ $(function () {
         method : "get",
         success: function (data) {
             tags = data;
-            //
             showTags(tags);
         },
         error : function () {
@@ -54,12 +54,15 @@ $(function () {
         var movie_title = $icon.closest('.film__item').find(".film__name").html();
         
         if (typeof bookmarks[movie_title] == 'undefined') {
-            bookmarks[movie_title] = movie_title;
+            bookmarks[movie_title] = true;
             $icon.find('use').attr('href', '#star2');
         } else {
             delete bookmarks[movie_title];
             $icon.find('use').attr('href', '#star');
         }
+        
+        localStorage.setItem('bookmarks__list', JSON.stringify(bookmarks));
+        
     });
 
 
@@ -217,20 +220,11 @@ function createFilmItem() {
 //показ закладок
 function showBookmarks() {
     $(".bookmarks__content").empty();
-    /*for (var i = 0; i < bookmarks.length; i++) {
-        var jsonElement = bookmarks[i];
-        var $element = createBookmarksItem();
-        $element.find('.bookmarks__name').text(jsonElement);
-        $(".bookmarks__content").append($element);
-    }*/
-
     for (var key in bookmarks) {
-        var jsonElement = bookmarks[key];
         var $element = createBookmarksItem();
-        $element.find('.bookmarks__name').text(jsonElement);
+        $element.find('.bookmarks__name').text(key);
         $(".bookmarks__content").append($element);
     }
-
 }
 
 
