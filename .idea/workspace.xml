@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21354c26-6c97-4ff4-a74b-7501d89da85f" name="Default Changelist" comment="" />
+    <list default="true" id="21354c26-6c97-4ff4-a74b-7501d89da85f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/jsons/films.json" beforeDir="false" afterPath="$PROJECT_DIR$/jsons/films.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsons/tags.json" beforeDir="false" afterPath="$PROJECT_DIR$/jsons/tags.json" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -30,7 +33,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assets/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="253">
@@ -39,11 +42,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="films.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/jsons/films.json">
+          <file leaf-file-name="tags.json" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/jsons/tags.json">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="85">
-                  <caret line="1604" column="28" selection-start-line="1604" selection-start-column="28" selection-end-line="1604" selection-end-column="28" />
+                  <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
@@ -69,7 +72,7 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="304">
+                <state relative-caret-position="559">
                   <caret line="225" lean-forward="true" selection-start-line="225" selection-end-line="225" />
                 </state>
               </provider>
@@ -88,7 +91,6 @@
       <find>films__content</find>
       <find>console</find>
       <find>Супербратья Марио</find>
-      <find>current_tags</find>
       <find>Адаптация</find>
       <find>bt</find>
       <find>showFilms</find>
@@ -96,16 +98,25 @@
       <find>current_movies</find>
       <find>findEl</find>
       <find>showButton</find>
+      <find>Преключение</find>
       <find>showed</find>
+      <find>current_tags</find>
     </findStrings>
+    <replaceStrings>
+      <replace>Приключение</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jsons/films.json" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/assets/js/main.js" />
+        <option value="$PROJECT_DIR$/jsons/films.json" />
+        <option value="$PROJECT_DIR$/jsons/tags.json" />
       </list>
     </option>
   </component>
@@ -129,6 +140,7 @@
     <option name="width" value="1875" />
     <option name="height" value="1030" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -209,24 +221,24 @@
       <workItem from="1562230334653" duration="19095000" />
       <workItem from="1562320910505" duration="19860000" />
       <workItem from="1562397992160" duration="33085000" />
-      <workItem from="1562486735745" duration="7447000" />
+      <workItem from="1562486735745" duration="8115000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97926000" />
+    <option name="totallyTimeSpent" value="98594000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49717513" visible="true" weight="0.13681428" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49717513" visible="true" weight="0.13681428" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" id="Structure" order="1" sideWeight="0.50282484" side_tool="true" visible="true" weight="0.13681428" />
+      <window_info id="Structure" order="1" sideWeight="0.50282484" side_tool="true" visible="true" weight="0.13681428" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -451,13 +463,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jsons/tags.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/dopmaterials/dopmat/Templates/moto/js/allscripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-108" />
@@ -466,13 +471,6 @@
     <entry file="file://C:/dopmaterials/dopmat/Templates/moto/js/myscripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-612" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsons/films.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="1604" column="28" selection-start-line="1604" selection-start-column="28" selection-end-line="1604" selection-end-column="28" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -489,8 +487,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="559">
           <caret line="225" lean-forward="true" selection-start-line="225" selection-end-line="225" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsons/films.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="1657" column="34" lean-forward="true" selection-start-line="1657" selection-start-column="34" selection-end-line="1657" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -498,6 +503,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="255" column="8" selection-start-line="255" selection-start-column="8" selection-end-line="255" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsons/tags.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
         </state>
       </provider>
     </entry>
