@@ -152,6 +152,8 @@ function showContent($btn) {
         showFilms();
 
     } else {
+        $('.search').addClass('closed');
+        $('.tags').addClass('closed');
         $(".btn").addClass("closed");
         $(".bookmarks__content").removeClass('closed');
         $('.films__content').addClass('closed');
